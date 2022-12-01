@@ -40,23 +40,18 @@ function calculate() {
   let userTopings = document.getElementById("topings").value
 
   if (userSize == "Small") {
-    let sizePrice = 1.50
-    document.getElementById("pizzaSize").innerHTML =
-    "It will be" + sizePrice
+    let sizePrice = 1.5
+    document.getElementById("pizzaSize").innerHTML = "It will be" + sizePrice
   } else if (userSize == "Medium") {
-    let sizePrice = 2.00
-    document.getElementById("pizzaSize").innerHTML =
-    "It will be" + sizePrice
+    let sizePrice = 2.0
+    document.getElementById("pizzaSize").innerHTML = "It will be" + sizePrice
   } else if (userSize == "Large") {
-    let sizePrice = 2.50
-    document.getElementById("pizzaSize").innerHTML =
-    "It will be" + sizePrice
+    let sizePrice = 2.5
+    document.getElementById("pizzaSize").innerHTML = "It will be" + sizePrice
   } else if (userSize == "Extra-Large") {
-    let sizePrice = 2.50
-    document.getElementById("pizzaSize").innerHTML =
-    "It will be" + sizePrice
+    let sizePrice = 2.5
+    document.getElementById("pizzaSize").innerHTML = "It will be" + sizePrice
   } else {
-    document.getElementById("pizzaSize").innerHTML =
-    "Error"
+    document.getElementById("pizzaSize").innerHTML = "Error"
   }
 }
