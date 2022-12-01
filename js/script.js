@@ -39,10 +39,24 @@ function calculate() {
   let userSize = document.getElementById("size").value
   let userTopings = document.getElementById("topings").value
 
-  if (userSize == "small") {
-    let sizePrice = 1.5
-    document.getElementById("answer").innerHTML = "It will be" + sizePrice
+  if (userSize == "Small") {
+    let sizePrice = 1.50
+    document.getElementById("pizzaSize").innerHTML =
+    "It will be" + sizePrice
+  } else if (userSize == "Medium") {
+    let sizePrice = 2.00
+    document.getElementById("pizzaSize").innerHTML =
+    "It will be" + sizePrice
+  } else if (userSize == "Large") {
+    let sizePrice = 2.50
+    document.getElementById("pizzaSize").innerHTML =
+    "It will be" + sizePrice
+  } else if (userSize == "Extra-Large") {
+    let sizePrice = 2.50
+    document.getElementById("pizzaSize").innerHTML =
+    "It will be" + sizePrice
   } else {
-    document.getElementById("answer").innerHTML = "Error"
+    document.getElementById("pizzaSize").innerHTML =
+    "Error"
   }
 }
