@@ -42,29 +42,32 @@ function calculate() {
   let totalPrice = sizePrice + topingPrice
 
     if (userSize == "Small") {
-      let sizePrice = 1.50
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to order a small pizze with cheese."
     } else if (userSize == "Medium") {
-      let sizePrice = 2.00
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to order a Medium pizze with cheese."    
     } else if (userSize == "Large") {
-      let sizePrice = 2.50
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to order a Large pizze with cheese."
     } else if (userSize == "Extra-Large") {
-      let sizePrice = 2.50
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to order a Extra Large pizze with cheese."  
     } else {
-      document.getElementById("pizzaSize").innerHTML = "Error"
+      document.getElementById("pizzaSize").innerHTML = 
+      "Error"
     }
-
+    
     if (userTopings == "Extra-Cheese") {
-      let topingPrice = 50
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to add Extra Cheese."     
     } else if (userTopings == "Pepperoni") {
-      let topingPrice = 1
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to add Pepperoni."       
     } else if (userTopings == "Pineapple") {
-      let topingPrice = 1.50
+    document.getElementById("pizzaSize").innerHTML =
+    "You want to add Pinnaple."    
     } else {
       document.getElementById("pizzaSize").innerHTML = "Error"
     }
-
-  function calculate() 
-  document.getElementById("pizzaSize").innerHTML =
-    "Your total will be" + totalPrice
-
 }
