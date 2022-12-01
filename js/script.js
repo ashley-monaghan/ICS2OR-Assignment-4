@@ -41,33 +41,31 @@ function calculate() {
 
   let totalPrice = sizePrice + topingPrice
 
-    if (userSize == "Small") {
+  if (userSize == "Small") {
     document.getElementById("pizzaSize").innerHTML =
-    "You want to order a small pizze with cheese."
-    } else if (userSize == "Medium") {
+      "You want to order a small pizze with cheese."
+  } else if (userSize == "Medium") {
     document.getElementById("pizzaSize").innerHTML =
-    "You want to order a Medium pizze with cheese."    
-    } else if (userSize == "Large") {
+      "You want to order a Medium pizze with cheese."
+  } else if (userSize == "Large") {
     document.getElementById("pizzaSize").innerHTML =
-    "You want to order a Large pizze with cheese."
-    } else if (userSize == "Extra-Large") {
+      "You want to order a Large pizze with cheese."
+  } else if (userSize == "Extra-Large") {
     document.getElementById("pizzaSize").innerHTML =
-    "You want to order a Extra Large pizze with cheese."  
-    } else {
-      document.getElementById("pizzaSize").innerHTML = 
-      "Error"
-    }
-    
-    if (userTopings == "Extra-Cheese") {
+      "You want to order a Extra Large pizze with cheese."
+  } else {
+    document.getElementById("pizzaSize").innerHTML = "Error"
+  }
+
+  if (userTopings == "Extra-Cheese") {
     document.getElementById("pizzaSize").innerHTML =
-    "You want to add Extra Cheese."     
-    } else if (userTopings == "Pepperoni") {
+      "You want to add Extra Cheese."
+  } else if (userTopings == "Pepperoni") {
     document.getElementById("pizzaSize").innerHTML =
-    "You want to add Pepperoni."       
-    } else if (userTopings == "Pineapple") {
-    document.getElementById("pizzaSize").innerHTML =
-    "You want to add Pinnaple."    
-    } else {
-      document.getElementById("pizzaSize").innerHTML = "Error"
-    }
+      "You want to add Pepperoni."
+  } else if (userTopings == "Pineapple") {
+    document.getElementById("pizzaSize").innerHTML = "You want to add Pinnaple."
+  } else {
+    document.getElementById("pizzaSize").innerHTML = "Error"
+  }
 }
