@@ -20,7 +20,7 @@ if (navigator.serviceWorker) {
 // Created on: Oct 2022
 // This file contains the JS functions for index.html
 
-"use strict"
+;("use strict")
 
 /**
  * Check servie worker.
@@ -40,11 +40,9 @@ function calculate() {
   let userTopings = document.getElementById("topings").value
 
   if (userSize == "small") {
-    let sizePrice = 1.50
-    document.getElementById("answer").innerHTML =
-    "It will be" + sizePrice
+    let sizePrice = 1.5
+    document.getElementById("answer").innerHTML = "It will be" + sizePrice
   } else {
-    document.getElementById("answer").innerHTML =
-      "Error"
+    document.getElementById("answer").innerHTML = "Error"
   }
 }
