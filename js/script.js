@@ -74,9 +74,9 @@ function calculate() {
   } else {
     document.getElementById("pizzaTopings").innerHTML = "Error"
   }
-
 }
 
 function calculatee() {
-  document.getElementById("total").innerHTML = "Your total will be $ ! Please call 737-1111 to order!"
-}  
+  document.getElementById("total").innerHTML =
+    "Your total will be $ ! Please call 737-1111 to order!"
+}
