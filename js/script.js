@@ -77,7 +77,5 @@ function calculate() {
 
   document.getElementById("total").innerHTML =
     "Your total will be $" +
-    sizePrice +
-    topingPrice +
     "! Please call 737-1111 to order!"
 }
