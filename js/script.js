@@ -39,8 +39,6 @@ function calculate() {
   let userSize = document.getElementById("size").value
   let userTopings = document.getElementById("topings").value
 
-  let totalPrice = sizePrice + topingPrice
-
   if (userSize == "Small") {
     let sizePrice = 1.0
     document.getElementById("pizzaSize").innerHTML =
@@ -79,6 +77,6 @@ function calculate() {
 }
 
 function whenButtonClicked() {
-  document.getElementById("total").innerHTML =
-    "Your total will be $" + totalPrice + "! Please call 737-1111 to order!"
+  document.getElementById("total").innerHTML = "Your total will be $" + sizePrice + topingPrice + "! Please call 737-1111 to order!"
+
 }
