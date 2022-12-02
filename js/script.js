@@ -42,19 +42,19 @@ function calculate() {
   if (userSize == "Small") {
     let sizePrice = 1.0
     document.getElementById("pizzaSize").innerHTML =
-      "You want to order a small pizze with cheese."
+      "You want to order a small pizza with cheese."
   } else if (userSize == "Medium") {
     let sizePrice = 1.5
     document.getElementById("pizzaSize").innerHTML =
-      "You want to order a Medium pizze with cheese."
+      "You want to order a medium pizza with cheese."
   } else if (userSize == "Large") {
     let sizePrice = 2.0
     document.getElementById("pizzaSize").innerHTML =
-      "You want to order a Large pizze with cheese."
+      "You want to order a large pizza with cheese."
   } else if (userSize == "Extra-Large") {
     let sizePrice = 2.5
     document.getElementById("pizzaSize").innerHTML =
-      "You want to order a Extra Large pizze with cheese."
+      "You want to order a extra large pizza with cheese."
   } else {
     document.getElementById("pizzaSize").innerHTML = "Error"
   }
@@ -62,24 +62,23 @@ function calculate() {
   if (userTopings == "Extra-Cheese") {
     let topingPrice = 0.5
     document.getElementById("pizzaTopings").innerHTML =
-      "You want to add Extra Cheese."
+      "You want to add extra eheese."
   } else if (userTopings == "Pepperoni") {
     let topingPrice = 1.0
     document.getElementById("pizzaTopings").innerHTML =
-      "You want to add Pepperoni."
+      "You want to add pepperoni."
   } else if (userTopings == "Pineapple") {
     let topingPrice = 1.5
     document.getElementById("pizzaTopings").innerHTML =
-      "You want to add Pinnaple."
+      "You want to add pinnaple."
   } else {
     document.getElementById("pizzaTopings").innerHTML = "Error"
   }
+
+  function whenButtonClicked() {
+    document.getElementById("total").innerHTML = "Your total will be $" + sizePrice + topingPrice + "! Please call 737-1111 to order!"
+  
+  }  
+
 }
 
-function whenButtonClicked() {
-  document.getElementById("total").innerHTML =
-    "Your total will be $" +
-    sizePrice +
-    topingPrice +
-    "! Please call 737-1111 to order!"
-}
