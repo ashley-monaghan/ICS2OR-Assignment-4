@@ -75,6 +75,8 @@ function calculate() {
     document.getElementById("pizzaTopings").innerHTML = "Error"
   }
 
+  let totalPrice = sizePrice + topingPrice
+  
   document.getElementById("total").innerHTML =
-    "Your total will be $" + "! Please call 737-1111 to order!"
+    "Your total will be $" + totalPrice + "! Please call 737-1111 to order!"
 }
