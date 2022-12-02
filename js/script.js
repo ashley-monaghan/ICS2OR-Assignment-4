@@ -76,10 +76,7 @@ function calculate() {
   }
 
   function whenButtonClicked() {
-    document.getElementById("total").innerHTML =
-      "Your total will be $" +
-      sizePrice +
-      topingPrice +
-      "! Please call 737-1111 to order!"
-  }
+    document.getElementById("total").innerHTML = "Your total will be $" + sizePrice + topingPrice + "! Please call 737-1111 to order!"
+  }  
+
 }
