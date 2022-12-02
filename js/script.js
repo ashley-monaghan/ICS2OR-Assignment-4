@@ -42,15 +42,19 @@ function calculate() {
   let totalPrice = sizePrice + topingPrice
 
   if (userSize == "Small") {
+    let sizePrice = 1.00
     document.getElementById("pizzaSize").innerHTML =
       "You want to order a small pizze with cheese."
   } else if (userSize == "Medium") {
+    let sizePrice = 1.50
     document.getElementById("pizzaSize").innerHTML =
       "You want to order a Medium pizze with cheese."
   } else if (userSize == "Large") {
+    let sizePrice = 2.00
     document.getElementById("pizzaSize").innerHTML =
       "You want to order a Large pizze with cheese."
   } else if (userSize == "Extra-Large") {
+    let sizePrice = 2.50
     document.getElementById("pizzaSize").innerHTML =
       "You want to order a Extra Large pizze with cheese."
   } else {
@@ -58,15 +62,23 @@ function calculate() {
   }
 
   if (userTopings == "Extra-Cheese") {
+    let topingPrice = 0.50
     document.getElementById("pizzaTopings").innerHTML =
       "You want to add Extra Cheese."
   } else if (userTopings == "Pepperoni") {
+    let topingPrice = 1.00
     document.getElementById("pizzaTopings").innerHTML =
       "You want to add Pepperoni."
   } else if (userTopings == "Pineapple") {
+    let topingPrice = 1.50
     document.getElementById("pizzaTopings").innerHTML =
       "You want to add Pinnaple."
   } else {
     document.getElementById("pizzaTopings").innerHTML = "Error"
   }
+}
+
+function whenButtonClicked() {
+  document.getElementById("total").innerHTML = "Your total will be $" + totalPrice + "! Please call 737-1111 to order!"
+
 }
