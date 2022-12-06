@@ -39,38 +39,26 @@ function calculate() {
   let userSize = document.getElementById("size").value
   let userTopings = document.getElementById("topings").value
 
+  let sizePrice = 0
+
   if (userSize == "Small") {
-    let sizePrice = 1.0
-    document.getElementById("pizzaSize").innerHTML =
-      "You want to order a small pizza with cheese."
+    sizePrice = 1.0
   } else if (userSize == "Medium") {
-    let sizePrice = 1.5
-    document.getElementById("pizzaSize").innerHTML =
-      "You want to order a medium pizza with cheese."
+    sizePrice = 1.5
   } else if (userSize == "Large") {
-    let sizePrice = 2.0
-    document.getElementById("pizzaSize").innerHTML =
-      "You want to order a large pizza with cheese."
+    sizePrice = 2.0
   } else if (userSize == "Extra-Large") {
-    let sizePrice = 2.5
-    document.getElementById("pizzaSize").innerHTML =
-      "You want to order a extra large pizza with cheese."
+    sizePrice = 2.5
   } else {
     document.getElementById("pizzaSize").innerHTML = "Error"
   }
 
   if (userTopings == "Extra-Cheese") {
-    let topingPrice = 0.5
-    document.getElementById("pizzaTopings").innerHTML =
-      "You want to add extra eheese."
+    topingPrice = 0.5
   } else if (userTopings == "Pepperoni") {
-    let topingPrice = 1.0
-    document.getElementById("pizzaTopings").innerHTML =
-      "You want to add pepperoni."
+    topingPrice = 1.0
   } else if (userTopings == "Pineapple") {
-    let topingPrice = 1.5
-    document.getElementById("pizzaTopings").innerHTML =
-      "You want to add pinnaple."
+    topingPrice = 1.5
   } else {
     document.getElementById("pizzaTopings").innerHTML = "Error"
   }
