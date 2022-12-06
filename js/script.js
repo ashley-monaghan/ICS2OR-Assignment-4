@@ -40,6 +40,7 @@ function calculate() {
   let userTopings = document.getElementById("topings").value
 
   let sizePrice = 0
+  let topingPrice = 0
 
   if (userSize == "Small") {
     sizePrice = 1.0
