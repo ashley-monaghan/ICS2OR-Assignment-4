@@ -39,8 +39,8 @@ function calculate() {
   let userSize = document.getElementById("size").value
   let userTopings = document.getElementById("topings").value
 
-  let sizePrice = 0.00
-  let topingPrice = 0.00
+  let sizePrice = 0.0
+  let topingPrice = 0.0
 
   if (userSize == "Small") {
     sizePrice = 1.0
@@ -67,5 +67,7 @@ function calculate() {
   let totalPrice = sizePrice + topingPrice
 
   document.getElementById("total").innerHTML =
-    "Your total will be $" + totalPrice.format(2) + "! Please call 737-1111 to order!"
+    "Your total will be $" +
+    totalPrice.format(2) +
+    "! Please call 737-1111 to order!"
 }
