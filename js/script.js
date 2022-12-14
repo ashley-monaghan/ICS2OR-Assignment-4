@@ -39,9 +39,10 @@ function calculate() {
   let userSize = document.getElementById("size").value
   let userTopings = document.getElementById("topings").value
 
-  let sizePrice = 0.0
-  let topingPrice = 0.0
-
+  let sizePrice = 0.00
+  let topingPrice = 0.00
+  const totalPrice = new Intl.NumberFormat('en-US')
+  
   if (userSize == "Small") {
     sizePrice = 1.0
   } else if (userSize == "Medium") {
@@ -64,10 +65,15 @@ function calculate() {
     document.getElementById("pizzaTopings").innerHTML = "Error"
   }
 
-  let totalPrice = sizePrice + topingPrice
+  totalPrice = sizePrice + topingPrice
 
   document.getElementById("total").innerHTML =
+<<<<<<< HEAD
+    "Your total will be $" + totalPrice + "! Please call 737-1111 to order!"
+
+=======
     "Your total will be $" +
     totalPrice.format(2) +
     "! Please call 737-1111 to order!"
+>>>>>>> 0b5d37f50dd229c4ce01cfe37c3ea2ce15f02e08
 }
