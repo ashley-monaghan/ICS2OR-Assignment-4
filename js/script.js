@@ -68,12 +68,6 @@ function calculate() {
   totalPrice = sizePrice + topingPrice
 
   document.getElementById("total").innerHTML =
-<<<<<<< HEAD
     "Your total will be $" + totalPrice + "! Please call 737-1111 to order!"
 
-=======
-    "Your total will be $" +
-    totalPrice.format(2) +
-    "! Please call 737-1111 to order!"
->>>>>>> 0b5d37f50dd229c4ce01cfe37c3ea2ce15f02e08
 }
