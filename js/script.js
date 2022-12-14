@@ -39,14 +39,13 @@ function calculate() {
   let userSize = document.getElementById("size").value
   let userTopings = document.getElementById("topings").value
 
-  let sizePrice = 0.00
-  let topingPrice = 0.00
-  let totalPrice = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-});
+  let sizePrice = 0.0
+  let topingPrice = 0.0
+  let totalPrice = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  })
 
-  
   if (userSize == "Small") {
     sizePrice = 1.0
   } else if (userSize == "Medium") {
@@ -72,6 +71,7 @@ function calculate() {
   totalPrice = sizePrice + topingPrice
 
   document.getElementById("total").innerHTML =
-    "Your total will be $" + USDollar.format(totalPrice) + "! Please call 737-1111 to order!"
-
+    "Your total will be $" +
+    USDollar.format(totalPrice) +
+    "! Please call 737-1111 to order!"
 }
